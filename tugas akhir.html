@@ -1,0 +1,134 @@
+ <html>
+<title>TUGAS AKHIR</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+
+<head>
+<div class="w3-container w3-black Menus">
+    <img src="chrismartin.jpg" height="80%" width="100%">
+</div>
+</head>
+
+<body>
+</div>
+<div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button" onclick="openKota('ABOUT ME')">ABOUT ME</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('HOME')">HOME</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('ABOUT')">ABOUT</button>
+    <div class="w3-dropdown-hover">
+        
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <button class="w3-bar-item w3-button" onclick="openKota('chrismartin')">Chris Martin</button>
+          <button class="w3-bar-item w3-button" onclick="openKota('philharvey')">Phil Harvey</button>
+          <button class="w3-bar-item w3-button" onclick="openKota('willchampion')">Will Champion</button>
+		  <button class="w3-bar-item w3-button" onclick="openKota('jonnybuckland')">Jonny Buckland</button>
+        </div>
+</div>
+    
+<div id="ABOUT ME" class="w3-container kota" style="display: none">
+    <p>
+        <center>
+        <img src="fathur.jpeg" width="25%" length="25%">
+        <h3>
+           MUHAMAD FATHUR RAZAQ <br>
+            1012440<br>
+            IF 11
+			
+            
+        </h3>
+    </p>
+</div>    
+
+
+<div id="HOME" class="w3-container kota w3-animate-zoom" style="display: none">
+    <p>
+    <center>
+        <h3>Welcome To atthurr Website</h3>
+        <br>
+        <img  src="download.jpg">
+        <br><br>
+        do u know coldplay?
+    </center>
+    </p>
+</div>
+
+<div id="ABOUT" class="w3-container w3-black kota" style="display:none">
+    <p class="w3-text-white">   
+        Coldplay adalah sebuah band rock alternatif yang berasal dari Britania Raya. Band ini dibentuk di London pada tahun 1996 dan terdiri dari empat anggota: Chris Martin (vokal dan piano), Jonny Buckland (gitar), Guy Berryman (bass), dan Will Champion (drum). Mereka dikenal karena musik mereka yang melibatkan elemen-elemen pop, rock, dan alternatif dengan lirik yang sering kali melibatkan tema-tema introspektif dan emosional.
+
+Berikut adalah beberapa poin kunci tentang Coldplay:
+
+Album Pertama (Parachutes): Coldplay meraih popularitas internasional dengan album debut mereka, "Parachutes" (2000), yang mencakup lagu-lagu seperti "Yellow" dan "Trouble". Album ini memenangkan Grammy Award untuk Album of the Year pada tahun 2002.
+
+Kemapanan Kesuksesan: Coldplay terus merilis album-album yang sangat sukses secara komersial, termasuk "A Rush of Blood to the Head" (2002), "X&Y" (2005), "Viva la Vida or Death and All His Friends" (2008), "Mylo Xyloto" (2011), "Ghost Stories" (2014), "A Head Full of Dreams" (2015), dan "Everyday Life" (2019).
+
+Sound dan Pengaruh: Musik Coldplay seringkali dicirikan oleh melodi yang menghanyutkan, vokal khas Chris Martin, dan penggunaan piano dan gitar yang mencolok. Mereka dikenal dengan lagu-lagu yang atmosferik dan sering kali memiliki pesan emosional yang mendalam.
+
+Performa Panggung: Coldplay terkenal dengan penampilan panggung mereka yang spektakuler, sering kali melibatkan efek visual dan partisipasi aktif dari penonton. Mereka telah menjadi headliner di berbagai festival musik besar dan melakukan tur dunia yang sukses.
+
+Lagu-Lagu Terkenal: Beberapa lagu terkenal Coldplay meliputi "Clocks", "Fix You", "The Scientist", "Viva la Vida", "Paradise", "Adventure of a Lifetime", dan "Something Just Like This" (duet dengan The Chainsmokers).
+
+Penghargaan dan Pengakuan: Coldplay telah menerima banyak penghargaan, termasuk Grammy Awards, Brit Awards, dan MTV Awards. Mereka dianggap sebagai salah satu band terbesar di dunia dan telah menjual jutaan album di seluruh dunia.
+
+Coldplay terus menciptakan musik baru dan mengeksplorasi berbagai elemen dalam gaya musik mereka, membuat mereka tetap relevan dan dicintai oleh penggemar di seluruh dunia.
+    </p>
+</div>
+
+<div id="chrismartin" class="w3-container kota" style="display: none">
+    <p>
+        <center>
+        <img src="MARTIN.jpg" width="30%" legnth="30%">
+        <br><br>
+        Chris Martin <br>
+         2 Maret 1977 <br>
+        Whitestone, Britania Raya
+    </p>
+</div>
+
+<div id="philharvey" class="w3-container kota" style="display: none">
+    <p>
+        <center>
+        <img src="PHIL.jpg" width="30%" legnth="30%">
+        <br><br>
+        Phil Harvey <br>
+         29 Agustus 1976  <br>
+        Bristol, Britania Raya
+    </p>
+</div>
+
+<div id="willchampion" class="w3-container kota" style="display: none">
+    <p>
+        <center>
+        <img src="will.jpg" width="30%" legnth="30%">
+        <br><br>
+        Will Champion <br>
+         31 Juli 1978  <br>
+       Southampton, Britania Raya
+    </p>
+</div>
+
+<div id="jonnybuckland" class="w3-container kota" style="display: none">
+    <p>
+        <center>
+        <img src="jon.jpg" width="30%" legnth="30%">
+        <br><br>
+        Jonny Buckland<br>
+         11 September 1977<br>
+       Islington, London, Britania Raya
+    </p>
+</div>
+
+    
+
+<script>
+    function openKota(namakota) {
+        var i;
+        var x = document.getElementsByClassName('kota');
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = 'none';
+        }
+    document.getElementById(namakota).style.display = 'block';
+}
+</script>
+</body>
+</html>
